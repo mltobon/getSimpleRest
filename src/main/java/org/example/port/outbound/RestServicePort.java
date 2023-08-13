@@ -4,4 +4,6 @@ import java.util.List;
 
 public interface RestServicePort {
     List<String> getHobbiesList();
+
+    String getUserCleanInfo();
 }

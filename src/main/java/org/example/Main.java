@@ -12,6 +12,7 @@ public class Main {
         RestServicePort service = new RestServiceAdapter(client);
         try{
             System.out.println(service.getHobbiesList());
+            System.out.println("clean object: " +service.getUserCleanInfo());
         }catch (CustomException e){
             System.out.println("Some error occurred: " +e.getMessage());
         }
